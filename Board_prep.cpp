@@ -1,3 +1,18 @@
+/**
+*
+* Solution to course project # <номер на вариант>
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Milen Temelkov
+* @idnumber 2MI0600114
+* @compiler VC
+*
+* Functions to validate and place ships on the board source file
+*
+*/
+
 #include<iostream>
 #include<fstream>
 #include<iomanip>
@@ -403,13 +418,17 @@ void arraging_ship_process(char** board, bool** occupied, int ship_size, int& sh
 
 void game_preparation(char** board) {
 
-	//char option;
-	//cout << "Do you want to chose a preset board? y/n" << endl; cin >> option;
+	char option;
+	cout << "Do you want to chose a preset board? y/n" << endl;
+	cin >> option;
 		
-	//if (option == 'y') {
-	//	set_preset_boards(board); }
+	if (option == 'y') {
+
+		set_preset_boards(board);
+
+	}
 	
-	//else {}
+	else {
 
 		char ship_type;
 
@@ -534,6 +553,8 @@ void game_preparation(char** board) {
 				cout << endl;
 			}
 		}
+
+	}
 		//delete stored data for this part of the game
 		void delete_data(bool** occupied);
 }

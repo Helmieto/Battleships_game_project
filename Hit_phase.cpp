@@ -1,6 +1,20 @@
+/**
+*
+* Solution to course project # <номер на вариант>
+* Introduction to programming course
+* Faculty of Mathematics and Informatics of Sofia University
+* Winter semester 2021/2022
+*
+* @author Milen Temelkov
+* @idnumber 2MI0600114
+* @compiler VC
+*
+* Functions to perform the shooting part of the game source file
+*
+*/
+
 #include <iostream>
 #include<iomanip>
-//#include"Board_prep.h" 
 #include"Boards_storing_info.h"
 
 using namespace std;
