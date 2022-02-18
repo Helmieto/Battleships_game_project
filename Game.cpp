@@ -32,11 +32,15 @@ void game() {
 
 	print_board(board_player_1);
 
+	//clear_screen();
+
 	cout << "PLAYER 2" << endl << endl;
 
 	game_preparation(board_player_2);
 
 	print_board(board_player_2);
+
+	clear_screen();
 
 	hit_phase(board_player_1, board_player_2);
 

@@ -425,7 +425,7 @@ void game_preparation(char** board) {
 	if (option == 'y') {
 
 		set_preset_boards(board);
-
+		cout << endl;
 	}
 	
 	else {

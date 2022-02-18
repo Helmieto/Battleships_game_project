@@ -84,11 +84,12 @@ void hit_phase(char** board_pl1, char** board_pl2) {
 		is_a_hit = true;
 
 		//PLAYER 1
+		
 
 		//play until u miss or sink all enemy ships
 		while (is_a_hit && player_2_ships) {
 
-			cout << "Player 1 turn." << endl << endl;
+			cout << endl << "Player 1 turn." << endl << endl;
 
 			//option to see where he has hit
 			cout << "Do you want to see the enemy board? y/n" << endl;
@@ -140,7 +141,7 @@ void hit_phase(char** board_pl1, char** board_pl2) {
 		//play until you score a hit, sink all enemy ships or lose your own
 		while (is_a_hit && player_1_ships && player_2_ships) {
 
-			cout << "Player 2 turn." << endl << endl;
+			cout << endl << "Player 2 turn." << endl << endl;
 
 			cout << "Do you want to see the enemy board? y/n" << endl;
 			cin >> yes_or_no;
